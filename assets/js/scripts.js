@@ -3,4 +3,5 @@
         $('.menu-trigger').on(click,function() {
             $('.hamburger-menu').addClass('isOpen');
         });
+        
     });

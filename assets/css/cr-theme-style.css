@@ -379,8 +379,9 @@ h6,.h6-style {
 
 .site-btn{
     font-size: 1rem;
-    padding: 23px 30px;
+    padding: 20px 30px;
     font-weight: 700;
+    text-align: center;
     line-height: 171.429%;
     text-transform: uppercase;
     font-family: var(--font-heading);
@@ -389,7 +390,10 @@ h6,.h6-style {
     display: inline-block;
     transition: 0.3s all ease;
 }
-
+.site-btn:hover {
+    color: var(--cr-white);
+    background-color: var(--cr-text-color);
+}
 
 
 
