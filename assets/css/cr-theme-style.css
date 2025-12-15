@@ -124,12 +124,12 @@ p strong,
 b {
     font-weight: 500;
 }
-a:not(.site-btn) {
+/* a:not(.site-btn) {
 	color: var(--denby-navy);
 	font-weight: 500;
     text-decoration: underline;
     transition: 0.3s all ease;
-}
+} */
 ul {
 	padding-left: 0;
 }
