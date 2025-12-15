@@ -32,17 +32,14 @@ html {
 }
 
 body {
-    color: var(--lgcg-text-color);
-    font-family: var(--font-pt-sans);
+    color: var(--cr-text-color);
+    font-family: var(--font-body);
 	font-size: 1.125rem; /* 18px */
 	line-height: 1.625rem;
 	font-weight: 400; 
     height: 100%;
     margin: 0;
     min-height: 100%;
-}
-p{
-	letter-spacing: 0.053rem; /* 0.85px */
 }
 @media only screen and (max-width:767px) {
 
@@ -147,17 +144,17 @@ h6,.h6-style {
     margin-bottom: 2.5rem; /* 40px */
     letter-spacing: inherit;
 	font-weight: 700;
-    color: var(--lgcg-heading);
+    color: var(--cr-secondary);
 }
 h1,
 .h1-style {
 	font-size: 4rem; /* 64px */
     line-height: 115.625%;
 }
-h2,
-.h2-style {
+h2, .h2-style {
 	font-size: 3rem;
-    line-height: 112.5%;
+	line-height: 112.5%;
+	text-transform: capitalize;
 }
 h3,
 .h3-style {
@@ -176,16 +173,25 @@ h5,
 h6,.h6-style {
 	font-size: 1.25rem; /* 20px */
 }
+@media only screen and (max-width:1199px) {
+ h1,
+	.h1-style {
+		font-size: 3.125rem; /* 50px */
+	}
+  h2, .h2-style {
+	font-size: 2.6rem;
+	margin-bottom: 1.563rem;
+}
+}
 @media only screen and (max-width:991px) {
 
 	h1,
 	.h1-style {
-		font-size: 3.125rem; /* 50px */
+		font-size: 2.8rem; 
 	}
-	h2,
-	.h2-style {
-		font-size: 2.5rem; /* 40px */
-	}
+	h2, .h2-style {
+	font-size: 2.2rem;
+}
 	h3,
 	.h3-style {
 		font-size: 2rem; /* 32px */
@@ -197,12 +203,12 @@ h6,.h6-style {
 
 	h1, 
 	.h1-style{
-		font-size: 2.625rem; /* 42px */
+		font-size: 2.3rem; 
 	}
 	h2,
 	.h2-style,
     .inner-hero-content h1 {
-		font-size: 2.125rem; /* 34px *//
+		font-size: 1.8rem; 
 	}
 	h3,
 	.h3-style {
@@ -217,6 +223,10 @@ h6,.h6-style {
 		font-size: 1.375rem; /* 22px */
 	}
 }
+.layout-padding-100{
+    padding-left: 1.25rem; /* 20px */
+    padding-right: 1.25rem; /* 20px */
+}
 .layout-padding{
     padding-left: 1.25rem; /* 20px */
     padding-right: 1.25rem; /* 20px */
@@ -227,7 +237,11 @@ h6,.h6-style {
 }
 @media only screen and (max-width:767px) {
 
-	.layout-padding.layout-padding0{
+	.layout-padding-100.layout-padding0{
+		padding-left: 0;
+		padding-right: 0;
+	}
+    .layout-padding.layout-padding0{
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -242,9 +256,13 @@ h6,.h6-style {
 }
 @media only screen and (min-width: 1200px) {
 
-	.layout-padding{
+	.layout-padding-100{
         padding-left: 2rem; /* 32px */
         padding-right: 2rem; /* 32px */
+    }
+    .layout-padding{
+        padding-left: 3rem; /* 32px */
+        padding-right: 3rem; /* 32px */
     }
 	.layout-margin{
         margin-left: 2rem; /* 32px */
@@ -253,17 +271,26 @@ h6,.h6-style {
 }
 
 @media only screen and (min-width: 1600px) {
-	.layout-padding{
+    .layout-padding{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+@media only screen and (min-width: 1800px) {
+	.layout-padding-100{
         padding-left: 100px;
         padding-right: 100px;
     }
+    .layout-padding{
+        padding-left: 300px;
+        padding-right: 300px;
+    }
 	.layout-margin{
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 300px;
+        margin-right: 300px;
     }
 
 }
-
 .denby-campervans-container{
     padding-left: 9.5rem; /* 152px */
 	padding-right: 9.5rem; /* 152px */
