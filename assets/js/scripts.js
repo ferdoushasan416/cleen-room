@@ -18,9 +18,34 @@ $('.menu-overlay').on('click', function () {
 });
 
 $('.our-slider-active').slick({
-  slidesToShow: 3,
+  slidesToShow: 2,
   slidesToScroll: 1,
   autoplay: false,
+  arrows: false,
+  centerMode: true,
+  centerPadding: '275px',
+  dots: true,
   autoplaySpeed: 2000,
+    responsive: [
+         
+      {
+        breakpoint: 1400,
+        settings: {
+         centerPadding: '150px',
+        }
+      },  
+      {
+        breakpoint: 992,
+        settings: {
+          centerPadding: '100px',
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+            slidesToShow: 1,
+            centerPadding: '50px',
+        }
+      }
+    ]
 });
-		

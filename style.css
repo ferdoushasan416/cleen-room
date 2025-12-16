@@ -98,6 +98,9 @@
 }
 }
 @media only screen and (max-width: 991px){
+   .site-btn {
+	  padding: 14px 30px;
+  }
     .site-branding {
       max-width: 450px;
     }
@@ -138,6 +141,12 @@
         z-index: 999;
  }
 }
+@media only screen and (max-width: 767) {
+.site-btn {
+	font-size: 0.75rem;
+	padding: 16px 28px;
+}
+}
 /* Header Style End */
 .hero-section {
 	background: rgba(66, 158, 166, 0.1);
@@ -155,7 +164,7 @@
 	font-size: 1.25rem;
 	font-weight: 600;
 	line-height: 150%;
-	font-family: var(--heading-font);
+	font-family: var(--font-heading);
   display: block;
   text-transform: uppercase;
 }
@@ -198,7 +207,8 @@
 	padding-bottom: 310px;
 }
 .sec_subtitle {
-	font-size: 1rem;
+	font-size: 0.875rem;
+	margin-bottom: 15px;
 }
 .cr-video-wrapper {
 	margin-top: -270px;
@@ -444,6 +454,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   margin-top: 30px;
+  text-decoration: underline;
   transition: 0.3s all ease;
 }
 .timeline-content a:hover {
@@ -531,6 +542,12 @@ body {
 /* Timeline Css End */
 
 
+.our-project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .our-slider-image {
   position: relative;
 }
@@ -579,6 +596,7 @@ body {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .slide-btn {
   color: var(--cr-text-color);
@@ -587,11 +605,75 @@ body {
   font-weight: 500;
   border: 1px solid #D8DDE1;
   line-height: 1.625rem;
-  padding: 13px 22px;
+  padding: 10px 22px;
   border-radius: 40px;
   text-transform: capitalize;
+  transition: 0.3s all ease;
 }
-.slick-slider {
-    margin:0 -15px;
+.slide-btn:hover {
+  color: var(--cr-white);
+  background-color: var(--cr-text-color);
 }
 
+.our-slider-active .slick-slide {
+    margin-right:15px;
+    margin-left:15px;
+}
+.our-slider-active .slick-dots li button::before {
+	font-size: 0;
+}
+.our-slider-active .slick-dots {
+	position: absolute;
+	left: 50%;
+  bottom: -60px;
+	transform: translateX(-50%);
+    list-style: none;
+  }
+.our-slider-active .slick-dots li {
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	margin: 0 12px;
+	outline: none;
+	cursor: pointer;
+	display: inline-block;
+	background-color: var(--cr-primary);
+  transition: 0.3s all ease;
+}
+ .our-slider-active .slick-dots li button {
+	outline: none;
+	width: 35px;
+	height: 35px;
+	border: 2px solid transparent;
+	border-radius: 50%;
+	font-size: 0;
+	margin-top: -10px;
+	margin-left: -11px;
+} 
+.our-slider-active .slick-dots .slick-active button {
+  border-color: var(--cr-primary); 
+}
+@media only screen and (max-width:991px) {
+.our-project-top {
+	margin-bottom: 40px;
+}
+.slider-bottom {
+	flex-direction: column;
+}
+.plus-icon {
+	width: 50px;
+	height: 50px;
+}
+.slider-bottom h4 {
+	margin-bottom: 18px;
+  font-size: 1.3rem;
+}
+ }
+@media only screen and (max-width:767px) {
+.our-slider-active .slick-slide {
+    margin-right:10px;
+    margin-left:10px;
+}
+}
+/* Our Project Css End */
+ 
