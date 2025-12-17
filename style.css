@@ -104,13 +104,9 @@
    .site-btn {
 	  padding: 14px 30px;
   }
-    .site-branding {
-      max-width: 450px;
-    }
-    /* .main-menu,
-    .header-btn{
-        display: none;
-    } */
+.site-branding {
+	max-width: 350px;
+ } 
     .menu-trigger {
         display: flex;
         width: 40px;
