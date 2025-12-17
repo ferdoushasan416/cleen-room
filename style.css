@@ -98,16 +98,19 @@
 }
 }
 @media only screen and (max-width: 991px){
+  ul {
+	list-style: none;
+}
    .site-btn {
 	  padding: 14px 30px;
   }
     .site-branding {
       max-width: 450px;
     }
-    .main-menu,
+    /* .main-menu,
     .header-btn{
         display: none;
-    }
+    } */
     .menu-trigger {
         display: flex;
         width: 40px;
@@ -122,26 +125,39 @@
         background: var(--cr-white);
     }
     .hamburger-menu {
-        position: fixed;
-        display: block;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: #2a0c0c;
-        padding: 40px;
-        height: 100vh;
-        opacity: 0;
-        visibility: hidden;
-        z-index: 0;
-
+      position: fixed;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: var(--cr-secondary);
+      height: 100vh;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 0;
+      padding-top: 100px;
+      padding-left: 50px;
     }
     .hamburger-menu.isOpen{
         opacity: 1;
         visibility: visible;
         z-index: 999;
  }
+    .mobile-menu ul li {
+      margin-bottom: 15px;
+    }
+    .mobile-menu ul li a {
+        color: var(--cr-white);
+      }
+    .header-socials ul {
+      display: flex;
+      column-gap: 20px;
+    }
+    .hamburger-menu .header-btn {
+      margin-top: 30px;
+    }
 }
-@media only screen and (max-width: 767) {
+@media only screen and (max-width: 767px) {
 .site-btn {
 	font-size: 0.75rem;
 	padding: 16px 28px;
@@ -945,7 +961,10 @@ article .box-btn {
 .copyright-link li a {
 	font-size: 0.938rem;
 }
-
+.copyright-inline {
+	flex-direction: column;
+	justify-content: center;
+}
 
 
 }

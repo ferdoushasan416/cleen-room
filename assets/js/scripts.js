@@ -17,6 +17,8 @@ $('.menu-overlay').on('click', function () {
     $('.menu-trigger').removeClass('active');
 });
 
+
+
 $('.our-slider-active').slick({
   slidesToShow: 2,
   slidesToScroll: 1,
