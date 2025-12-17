@@ -105,7 +105,7 @@
 	  padding: 14px 30px;
   }
 .site-branding {
-	max-width: 350px;
+	max-width: 260px;
  } 
     .menu-trigger {
         display: flex;
@@ -254,7 +254,7 @@
 	min-height: 245px;
 	position: absolute;
 	right: -36px;
-	bottom: 72px;
+	bottom: 36px;
 }
 .over-ons-thumb p {
   font-size: 1rem;
@@ -387,8 +387,12 @@ body {
 }
 }
 @media only screen and (max-width:767px) {
+.section-title h2 br {
+	display: none;
+}
 .counter-wrap {
 	column-gap: 30px;
+	row-gap: 20px;
 }
 .over-ons-img img {
 	width: 100%;
@@ -931,6 +935,10 @@ article .box-btn {
 @media only screen and (max-width:767px) {
 .footer-wrapper {
 	padding-top: 150px;
+}
+.footer-logo {
+	max-width: 190px;
+	margin-top: 22px;
 }
 .footer-box p {
 	font-size: 0.938rem;
